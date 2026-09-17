@@ -12,7 +12,7 @@ outputs/<episode-id>/video-prompt.md
 
 ## 快速使用
 
-1. 在 `episodes/<episode-id>/brief.md` 写清本集目标、时长、受众、必需事实和禁用内容。
+1. 在 `episodes/<episode-id>/brief.md` 写清本集目标、时长、受众、必需事实和禁用内容；时长按概念复杂度确定，最长 150 秒。
 2. 在项目根目录启动 Codex，并要求它使用 `.agents/skills/video-prompt-producer/SKILL.md` 生成该集 Prompt。
 3. Codex 会按 `.doc/workflow.md` 读取 `series/underwater-economics/` 的系列设定与 `.doc/templates/` 中的模板，生成文件并运行校验。
 

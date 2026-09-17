@@ -88,6 +88,7 @@ for (const [index, match] of scenes.entries()) {
 
 const statedDuration = objective.match(/^- 总时长：\s*(\d+)\s*秒/m);
 if (!statedDuration) errors.push('“视频目标”的总时长必须写成“<整数> 秒”。');
+else if (Number(statedDuration[1]) > 150) errors.push('“视频目标”的总时长不得超过 150 秒。');
 else if (scenes.length > 0 && previousEnd !== Number(statedDuration[1])) errors.push(`分镜终点为 ${previousEnd} 秒，与声明总时长 ${statedDuration[1]} 秒不一致。`);
 
 const negative = sectionBody(markdown, '负面约束');

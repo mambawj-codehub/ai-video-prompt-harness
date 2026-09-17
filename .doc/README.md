@@ -7,7 +7,7 @@
 | 任务 | 必读资料 | 再读取 |
 | --- | --- | --- |
 | 首次进入项目或判断范围 | [项目背景](project-background.md) | [工作流程](workflow.md) |
-| 生成或修订某集 Prompt | [工作流程](workflow.md) → [生成规则](generation-rules.md) → [比奇堡世界观与角色选角](bikini-bottom-setting.md) → [输出模板](templates/video-prompt-template.md) | 目标 `brief.md` 与其引用的 `series/` 文件 |
+| 生成或修订某集 Prompt | [工作流程](workflow.md) → [生成规则](generation-rules.md) → [故事情节与类比机制](storytelling-mechanism.md) → [比奇堡世界观与角色选角](bikini-bottom-setting.md) → [输出模板](templates/video-prompt-template.md) | 目标 `brief.md` 与其引用的 `series/` 文件 |
 | 排查结构校验失败 | [生成规则](generation-rules.md) | `scripts/validate-video-prompt.mjs` 的报错信息 |
 | 新建系列或补充背景 | [项目背景](project-background.md) | `series/<series-id>/` 下的事实资料 |
 
@@ -15,6 +15,7 @@
 
 - [项目背景](project-background.md)：项目边界、资料优先级和目录职责。
 - [生成规则](generation-rules.md)：Prompt 的固定内容合同、时间与不确定信息规则。
+- [故事情节与类比机制](storytelling-mechanism.md)：将抽象概念转成可见、通俗且有起伏的角色故事的方法与自检项。
 - [工作流程](workflow.md)：从输入读取到校验交付的可执行步骤。
 - [比奇堡世界观与角色选角](bikini-bottom-setting.md)：所有视频共享的叙事背景、角色锚点与经济角色选用规则。
 - [输出模板](templates/video-prompt-template.md)：`video-prompt.md` 的唯一结构来源。
