@@ -60,6 +60,8 @@ const timeline = sectionBody(markdown, '精确时间轴');
 if (!/^\|\s*时间段\s*\|/m.test(timeline)) errors.push('“精确时间轴”缺少时间段表格。');
 const references = sectionBody(markdown, '角色和参考素材');
 if (!/^\|\s*对象\s*\|/m.test(references)) errors.push('“角色和参考素材”缺少对象参考表格。');
+if (!/^\|\s*对象\s*\|.*本集经济功能/m.test(references)) errors.push('“角色和参考素材”必须包含“本集经济功能”列。');
+if (!/比奇堡/.test(markdown)) errors.push('视频 Prompt 必须明确使用“比奇堡”作为叙事背景。');
 const scenesBody = sectionBody(markdown, '分镜与时间轴');
 const sceneHeaders = [...scenesBody.matchAll(/^### (\d{2}:\d{2})-(\d{2}:\d{2})\s*$/gm)];
 const scenes = sceneHeaders.map((header, index) => {
